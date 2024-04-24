@@ -1,0 +1,18 @@
+{
+  "" : {
+    "dependencies" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/Objects-normal/arm64/NextAlarm-master.d",
+    "diagnostics" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/Objects-normal/arm64/NextAlarm-master.dia",
+    "emit-module-dependencies" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/Objects-normal/arm64/NextAlarm-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/Objects-normal/arm64/NextAlarm-master-emit-module.dia",
+    "swift-dependencies" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/Objects-normal/arm64/NextAlarm-master.swiftdeps"
+  },
+  "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphoneos/NextAlarm.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  },
+  "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift" : {
+
+  },
+  "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/NextAlarmApp.swift" : {
+
+  }
+}

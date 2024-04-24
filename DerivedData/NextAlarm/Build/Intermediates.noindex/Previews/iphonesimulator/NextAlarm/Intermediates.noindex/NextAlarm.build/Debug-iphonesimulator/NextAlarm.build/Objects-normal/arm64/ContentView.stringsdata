@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Home Screen"
+      },
+      {
+        "comment": "",
+        "key": "Go to Second Screen"
+      },
+      {
+        "comment": "",
+        "key": "Second"
+      },
+      {
+        "comment": "",
+        "key": "Second Screen"
+      },
+      {
+        "comment": "",
+        "key": "Go to Third Screen"
+      },
+      {
+        "comment": "",
+        "key": "Third Screen"
+      },
+      {
+        "comment": "",
+        "key": "Third"
+      }
+    ]
+  },
+  "version": 1
+}

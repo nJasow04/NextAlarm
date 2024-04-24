@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Build/Intermediates.noindex/Previews/iphonesimulator/NextAlarm/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/Objects-normal/arm64/ContentView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Third Screen"
+      },
+      {
+        "comment": "",
+        "key": "Third"
+      },
+      {
+        "comment": "",
+        "key": "Second"
+      },
+      {
+        "comment": "",
+        "key": "Second Screen"
+      },
+      {
+        "comment": "",
+        "key": "Go to Third Screen"
+      },
+      {
+        "comment": "",
+        "key": "Home"
+      },
+      {
+        "comment": "",
+        "key": "Home Screen"
+      },
+      {
+        "comment": "",
+        "key": "Go to Second Screen"
+      }
+    ]
+  },
+  "version": 1
+}

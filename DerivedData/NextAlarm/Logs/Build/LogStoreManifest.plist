@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>0F7018B2-6B4C-4776-B9C1-BB5641070952</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0F7018B2-6B4C-4776-B9C1-BB5641070952.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735618749.24556601</real>
+			<key>timeStoppedRecording</key>
+			<real>735618755.74342406</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>0F7018B2-6B4C-4776-B9C1-BB5641070952</string>
+		</dict>
+		<key>6F72984F-D213-4541-82A9-8EA758A05BD4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6F72984F-D213-4541-82A9-8EA758A05BD4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735618749.417256</real>
+			<key>timeStoppedRecording</key>
+			<real>735618755.78939795</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>6F72984F-D213-4541-82A9-8EA758A05BD4</string>
+		</dict>
+		<key>9A51F813-5A95-4D0A-9C2E-641859F6B245</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9A51F813-5A95-4D0A-9C2E-641859F6B245.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735618765.82975698</real>
+			<key>timeStoppedRecording</key>
+			<real>735618766.33105898</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>9A51F813-5A95-4D0A-9C2E-641859F6B245</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
