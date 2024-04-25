@@ -8,26 +8,12 @@ import struct SwiftUI.EmptyView
 import protocol SwiftUI.View
 import SwiftUI
 
-extension ThirdView {
+extension WelcomeView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift", line: 38)
-        Text(__designTimeString("#9480.[3].[0].property.[0].[0].arg[0].value", fallback: "Third Screen"))
-            .navigationTitle(__designTimeString("#9480.[3].[0].property.[0].[0].modifier[0].arg[0].value", fallback: "Third"))
-    
-#sourceLocation()
-    }
-}
-
-extension SecondView {
-    @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift", line: 26)
-        VStack {
-            Text(__designTimeString("#9480.[2].[0].property.[0].[0].arg[0].value.[0].arg[0].value", fallback: "Second Screen"))
-            NavigationLink(destination: ThirdView()) {
-                Text(__designTimeString("#9480.[2].[0].property.[0].[0].arg[0].value.[1].arg[1].value.[0].arg[0].value", fallback: "Go to Third Screen"))
-            }
-        }
-        .navigationTitle(__designTimeString("#9480.[2].[0].property.[0].[0].modifier[0].arg[0].value", fallback: "Second"))
+        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift", line: 88)
+        Text(__designTimeString("#10079.[2].[0].property.[0].[0].arg[0].value", fallback: "The Time App that Doesn't Suck"))
+            .font(.largeTitle)
+            .multilineTextAlignment(.center)
     
 #sourceLocation()
     }
@@ -35,15 +21,46 @@ extension SecondView {
 
 extension ContentView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift", line: 12)
-        NavigationView {
-            VStack {
-                Text(__designTimeString("#9480.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "Home Screen"))
-                NavigationLink(destination: SecondView()) {
-                    Text(__designTimeString("#9480.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[1].value.[0].arg[0].value", fallback: "Go to Second Screen"))
-                }
+        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/ContentView.swift", line: 43)
+        ZStack {
+            Color(.black).ignoresSafeArea()
+            
+            if showWelcome && !welcomeShown {
+                WelcomeView()
+                    .zIndex(__designTimeInteger("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[0].[0].modifier[0].arg[0].value", fallback: 1))
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline:.now() + __designTimeInteger("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[0].[0].modifier[1].arg[0].value.[0].modifier[0].arg[0].value.[0]", fallback: 1)) {
+                            withAnimation {
+                                showWelcome = __designTimeBoolean("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[0].[0].modifier[1].arg[0].value.[0].modifier[0].arg[1].value.[0].arg[0].value.[0].[0]", fallback: false)
+                                 welcomeShown = __designTimeBoolean("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[0].[0].modifier[1].arg[0].value.[0].modifier[0].arg[1].value.[0].arg[0].value.[1].[0]", fallback: true)
+                            }
+                        }
+                    }
+            } else {
+                TabView(selection: $selectedTab) {
+                    Alarm()
+                        .tabItem {
+                            Image(systemName: __designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[0].modifier[0].arg[0].value.[0].arg[0].value", fallback: "alarm"))
+                            Text(__designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[0].modifier[0].arg[0].value.[1].arg[0].value", fallback: "Alarm"))
+                                
+                        }
+                        .tag(__designTimeInteger("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[0].modifier[1].arg[0].value", fallback: 0))
+                            
+                    Timer()
+                        .tabItem {
+                            Image(systemName: __designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[1].modifier[0].arg[0].value.[0].arg[0].value", fallback: "timer"))
+                            Text(__designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[1].modifier[0].arg[0].value.[1].arg[0].value", fallback: "Timer"))
+                        }
+                        .tag(__designTimeInteger("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[1].modifier[1].arg[0].value", fallback: 1))
+                            
+                    StopWatch()
+                        .tabItem {
+                            Image(systemName: __designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[2].modifier[0].arg[0].value.[0].arg[0].value", fallback: "stopwatch"))
+                            Text(__designTimeString("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[2].modifier[0].arg[0].value.[1].arg[0].value", fallback: "Stopwatch"))
+                        }
+                        .tag(__designTimeInteger("#10079.[1].[4].property.[0].[0].arg[0].value.[1].[1].[0].arg[1].value.[2].modifier[1].arg[0].value", fallback: 2))
+                }/*.accentColor(.orange)*/
             }
-            .navigationTitle(__designTimeString("#9480.[1].[0].property.[0].[0].arg[0].value.[0].modifier[0].arg[0].value", fallback: "Home"))
         }
     
 #sourceLocation()
@@ -51,8 +68,7 @@ extension ContentView {
 }
 
 import struct NextAlarm.ContentView
-import struct NextAlarm.SecondView
-import struct NextAlarm.ThirdView
+import struct NextAlarm.WelcomeView
 #Preview {
     ContentView()
 }

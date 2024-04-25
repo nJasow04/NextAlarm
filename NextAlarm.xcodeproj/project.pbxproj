@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2F360352BDA18CD007A5868 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F360342BDA18CD007A5868 /* AlarmItem.swift */; };
 		D2FD4FC72BD8A6BA00ABC731 /* NextAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FC62BD8A6BA00ABC731 /* NextAlarmApp.swift */; };
-		D2FD4FC92BD8A6BA00ABC731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FC82BD8A6BA00ABC731 /* ContentView.swift */; };
 		D2FD4FCB2BD8A6BB00ABC731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD4FCA2BD8A6BB00ABC731 /* Assets.xcassets */; };
 		D2FD4FCE2BD8A6BB00ABC731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD4FCD2BD8A6BB00ABC731 /* Preview Assets.xcassets */; };
+		D2FD4FD52BD983A200ABC731 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FD42BD983A200ABC731 /* Timer.swift */; };
+		D2FD4FD72BD985F300ABC731 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FD62BD985F300ABC731 /* Alarm.swift */; };
+		D2FD4FDB2BD9869A00ABC731 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FDA2BD9869A00ABC731 /* StopWatch.swift */; };
+		D2FD4FDD2BD9AFDB00ABC731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FDC2BD9AFDB00ABC731 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D2F360342BDA18CD007A5868 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
 		D2FD4FC32BD8A6BA00ABC731 /* NextAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD4FC62BD8A6BA00ABC731 /* NextAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAlarmApp.swift; sourceTree = "<group>"; };
-		D2FD4FC82BD8A6BA00ABC731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D2FD4FCA2BD8A6BB00ABC731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2FD4FCD2BD8A6BB00ABC731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D2FD4FD42BD983A200ABC731 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		D2FD4FD62BD985F300ABC731 /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		D2FD4FDA2BD9869A00ABC731 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		D2FD4FDC2BD9AFDB00ABC731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				D2FD4FC62BD8A6BA00ABC731 /* NextAlarmApp.swift */,
-				D2FD4FC82BD8A6BA00ABC731 /* ContentView.swift */,
+				D2FD4FDC2BD9AFDB00ABC731 /* ContentView.swift */,
+				D2FD4FD62BD985F300ABC731 /* Alarm.swift */,
+				D2FD4FD42BD983A200ABC731 /* Timer.swift */,
+				D2FD4FDA2BD9869A00ABC731 /* StopWatch.swift */,
 				D2FD4FCA2BD8A6BB00ABC731 /* Assets.xcassets */,
 				D2FD4FCC2BD8A6BB00ABC731 /* Preview Content */,
+				D2F360342BDA18CD007A5868 /* AlarmItem.swift */,
 			);
 			path = NextAlarm;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2FD4FC92BD8A6BA00ABC731 /* ContentView.swift in Sources */,
+				D2F360352BDA18CD007A5868 /* AlarmItem.swift in Sources */,
+				D2FD4FD52BD983A200ABC731 /* Timer.swift in Sources */,
+				D2FD4FDD2BD9AFDB00ABC731 /* ContentView.swift in Sources */,
 				D2FD4FC72BD8A6BA00ABC731 /* NextAlarmApp.swift in Sources */,
+				D2FD4FD72BD985F300ABC731 /* Alarm.swift in Sources */,
+				D2FD4FDB2BD9869A00ABC731 /* StopWatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

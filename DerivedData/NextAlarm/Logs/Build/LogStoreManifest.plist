@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>0F7018B2-6B4C-4776-B9C1-BB5641070952</key>
+		<key>00A5D8D2-EE47-4515-A029-71ED2A46AC60</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>0F7018B2-6B4C-4776-B9C1-BB5641070952.xcactivitylog</string>
+			<string>00A5D8D2-EE47-4515-A029-71ED2A46AC60.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -40,15 +40,15 @@
 			<key>signature</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>timeStartedRecording</key>
-			<real>735618749.24556601</real>
+			<real>735703109.93910897</real>
 			<key>timeStoppedRecording</key>
-			<real>735618755.74342406</real>
+			<real>735703110.43634605</real>
 			<key>title</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>uniqueIdentifier</key>
-			<string>0F7018B2-6B4C-4776-B9C1-BB5641070952</string>
+			<string>00A5D8D2-EE47-4515-A029-71ED2A46AC60</string>
 		</dict>
-		<key>6F72984F-D213-4541-82A9-8EA758A05BD4</key>
+		<key>0636A64B-B86A-4BC8-BB32-0DFAF9F84707</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -57,7 +57,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>6F72984F-D213-4541-82A9-8EA758A05BD4.xcactivitylog</string>
+			<string>0636A64B-B86A-4BC8-BB32-0DFAF9F84707.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -82,15 +82,15 @@
 			<key>signature</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>timeStartedRecording</key>
-			<real>735618749.417256</real>
+			<real>735691758.15023398</real>
 			<key>timeStoppedRecording</key>
-			<real>735618755.78939795</real>
+			<real>735691760.24653006</real>
 			<key>title</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>uniqueIdentifier</key>
-			<string>6F72984F-D213-4541-82A9-8EA758A05BD4</string>
+			<string>0636A64B-B86A-4BC8-BB32-0DFAF9F84707</string>
 		</dict>
-		<key>9A51F813-5A95-4D0A-9C2E-641859F6B245</key>
+		<key>0CF82143-7A65-4CAB-BBCF-29AB3C066668</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -99,7 +99,49 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>9A51F813-5A95-4D0A-9C2E-641859F6B245.xcactivitylog</string>
+			<string>0CF82143-7A65-4CAB-BBCF-29AB3C066668.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703107.70236099</real>
+			<key>timeStoppedRecording</key>
+			<real>735703107.92937696</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>0CF82143-7A65-4CAB-BBCF-29AB3C066668</string>
+		</dict>
+		<key>1554CB38-78CE-4314-8747-BD8F4CD88784</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1554CB38-78CE-4314-8747-BD8F4CD88784.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -124,13 +166,475 @@
 			<key>signature</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>timeStartedRecording</key>
-			<real>735618765.82975698</real>
+			<real>735703089.84039795</real>
 			<key>timeStoppedRecording</key>
-			<real>735618766.33105898</real>
+			<real>735703090.42389905</real>
 			<key>title</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>uniqueIdentifier</key>
-			<string>9A51F813-5A95-4D0A-9C2E-641859F6B245</string>
+			<string>1554CB38-78CE-4314-8747-BD8F4CD88784</string>
+		</dict>
+		<key>1D32F33A-2F33-4CA1-8827-A1865E86952D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1D32F33A-2F33-4CA1-8827-A1865E86952D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735696139.98474801</real>
+			<key>timeStoppedRecording</key>
+			<real>735696140.64196706</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>1D32F33A-2F33-4CA1-8827-A1865E86952D</string>
+		</dict>
+		<key>8CE59A61-21DC-4A72-9446-E4F54C315721</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8CE59A61-21DC-4A72-9446-E4F54C315721.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703076.34344304</real>
+			<key>timeStoppedRecording</key>
+			<real>735703076.85383701</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>8CE59A61-21DC-4A72-9446-E4F54C315721</string>
+		</dict>
+		<key>914D6C95-08E7-4BE2-B6D7-935DDEED5F87</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>914D6C95-08E7-4BE2-B6D7-935DDEED5F87.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703110.84910095</real>
+			<key>timeStoppedRecording</key>
+			<real>735703111.02876902</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>914D6C95-08E7-4BE2-B6D7-935DDEED5F87</string>
+		</dict>
+		<key>96D861A6-A9E2-4A75-815B-18258EA60849</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>96D861A6-A9E2-4A75-815B-18258EA60849.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735713486.20917106</real>
+			<key>timeStoppedRecording</key>
+			<real>735713487.81902504</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>96D861A6-A9E2-4A75-815B-18258EA60849</string>
+		</dict>
+		<key>9FB82FBF-7784-4996-8A33-D20844FC6199</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9FB82FBF-7784-4996-8A33-D20844FC6199.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735691629.97204494</real>
+			<key>timeStoppedRecording</key>
+			<real>735691631.51365602</real>
+			<key>title</key>
+			<string>Build NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>9FB82FBF-7784-4996-8A33-D20844FC6199</string>
+		</dict>
+		<key>A35D2E1C-165C-4659-B323-C5E19EB0D5D9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A35D2E1C-165C-4659-B323-C5E19EB0D5D9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703084.87927699</real>
+			<key>timeStoppedRecording</key>
+			<real>735703085.44966602</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>A35D2E1C-165C-4659-B323-C5E19EB0D5D9</string>
+		</dict>
+		<key>BB286FDE-DFC4-4FF4-B041-03513F3611E4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BB286FDE-DFC4-4FF4-B041-03513F3611E4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703096.98804796</real>
+			<key>timeStoppedRecording</key>
+			<real>735703097.43118894</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>BB286FDE-DFC4-4FF4-B041-03513F3611E4</string>
+		</dict>
+		<key>CEA5A8B5-7A2A-4A57-A5B7-CEF76F961035</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>CEA5A8B5-7A2A-4A57-A5B7-CEF76F961035.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735703102.822312</real>
+			<key>timeStoppedRecording</key>
+			<real>735703103.25669897</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>CEA5A8B5-7A2A-4A57-A5B7-CEF76F961035</string>
+		</dict>
+		<key>F265DF5B-54FB-460B-9869-107253A4A4D6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F265DF5B-54FB-460B-9869-107253A4A4D6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735713062.293221</real>
+			<key>timeStoppedRecording</key>
+			<real>735713062.92310905</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>F265DF5B-54FB-460B-9869-107253A4A4D6</string>
+		</dict>
+		<key>F3279CC1-BE31-4EBE-A540-E51AC95AC1D2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3279CC1-BE31-4EBE-A540-E51AC95AC1D2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735692240.36540401</real>
+			<key>timeStoppedRecording</key>
+			<real>735692240.81996596</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>F3279CC1-BE31-4EBE-A540-E51AC95AC1D2</string>
+		</dict>
+		<key>FAAF22D2-B92B-4C26-B146-EB024CA3BF90</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FAAF22D2-B92B-4C26-B146-EB024CA3BF90.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735692361.65131104</real>
+			<key>timeStoppedRecording</key>
+			<real>735692362.51139104</real>
+			<key>title</key>
+			<string>Build for Previews NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>FAAF22D2-B92B-4C26-B146-EB024CA3BF90</string>
 		</dict>
 	</dict>
 </dict>

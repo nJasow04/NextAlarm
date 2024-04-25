@@ -4,35 +4,19 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Third Screen"
+        "key": "The Time App that Doesn't Suck"
       },
       {
         "comment": "",
-        "key": "Third"
+        "key": "Alarm"
       },
       {
         "comment": "",
-        "key": "Second"
+        "key": "Timer"
       },
       {
         "comment": "",
-        "key": "Second Screen"
-      },
-      {
-        "comment": "",
-        "key": "Go to Third Screen"
-      },
-      {
-        "comment": "",
-        "key": "Home"
-      },
-      {
-        "comment": "",
-        "key": "Home Screen"
-      },
-      {
-        "comment": "",
-        "key": "Go to Second Screen"
+        "key": "Stopwatch"
       }
     ]
   },

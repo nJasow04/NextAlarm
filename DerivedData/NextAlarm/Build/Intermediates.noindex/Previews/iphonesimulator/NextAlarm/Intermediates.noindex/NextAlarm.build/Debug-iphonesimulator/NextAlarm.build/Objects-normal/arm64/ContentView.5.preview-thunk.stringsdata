@@ -1,0 +1,24 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Build/Intermediates.noindex/Previews/iphonesimulator/NextAlarm/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/Objects-normal/arm64/ContentView.5.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "The Time App that Doesn't Suck"
+      },
+      {
+        "comment": "",
+        "key": "Alarm"
+      },
+      {
+        "comment": "",
+        "key": "Timer"
+      },
+      {
+        "comment": "",
+        "key": "Stopwatch"
+      }
+    ]
+  },
+  "version": 1
+}

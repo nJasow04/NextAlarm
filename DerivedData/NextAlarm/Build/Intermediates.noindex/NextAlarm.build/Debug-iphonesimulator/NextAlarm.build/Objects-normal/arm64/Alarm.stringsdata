@@ -1,0 +1,12 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Alarm Page"
+      }
+    ]
+  },
+  "version": 1
+}

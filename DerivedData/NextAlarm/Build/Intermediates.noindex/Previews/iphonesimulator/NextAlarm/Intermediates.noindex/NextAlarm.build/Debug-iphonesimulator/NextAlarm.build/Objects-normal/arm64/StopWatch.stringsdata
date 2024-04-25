@@ -1,0 +1,12 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/StopWatch.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Stop Watch Page"
+      }
+    ]
+  },
+  "version": 1
+}
