@@ -4,7 +4,11 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Alarm Page"
+        "key": "Alarms"
+      },
+      {
+        "comment": "",
+        "key": "Swipe right to delete, Tap alarm to edit"
       }
     ]
   },

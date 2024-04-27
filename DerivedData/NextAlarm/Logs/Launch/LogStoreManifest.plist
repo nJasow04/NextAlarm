@@ -67,6 +67,128 @@
 			<key>uniqueIdentifier</key>
 			<string>090D7E74-69AE-43E5-AFDD-C544B5E4BC7B</string>
 		</dict>
+		<key>8DF94ACD-D32F-4F0E-B72E-DCF115178ED8</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>03E341E0-3B2F-4EFA-B572-B65B7EBA13F4</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NextAlarm-2024.04.27_03-54-05--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735897245.412377</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>8DF94ACD-D32F-4F0E-B72E-DCF115178ED8</string>
+		</dict>
+		<key>DD3884FB-819E-4585-9DF0-726CDD78B10E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>9EB72678-4BC5-45D6-9E05-764BE95DDA59</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-NextAlarm-2024.04.27_05-04-55--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>NextAlarm project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>NextAlarm</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run NextAlarm</string>
+			<key>timeStartedRecording</key>
+			<real>735901495.03733504</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run NextAlarm</string>
+			<key>uniqueIdentifier</key>
+			<string>DD3884FB-819E-4585-9DF0-726CDD78B10E</string>
+		</dict>
 	</dict>
 </dict>
 </plist>

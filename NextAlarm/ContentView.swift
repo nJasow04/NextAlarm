@@ -26,9 +26,9 @@ struct ContentView: View {
                 .foregroundColor: UIColor.white.withAlphaComponent(0.6),
                 .font: UIFont.systemFont(ofSize: 14)
             ]
-            tabBarItemAppearance.selected.iconColor = .yellow
+        tabBarItemAppearance.selected.iconColor = UIColor(red: 137/255, green: 187/255, blue: 1, alpha: 1)
             tabBarItemAppearance.selected.titleTextAttributes = [
-                .foregroundColor: UIColor.yellow,
+                .foregroundColor: UIColor(red: 137/255, green: 187/255, blue: 1, alpha: 1),
                 .font: UIFont.systemFont(ofSize: 14)
             ]
             
