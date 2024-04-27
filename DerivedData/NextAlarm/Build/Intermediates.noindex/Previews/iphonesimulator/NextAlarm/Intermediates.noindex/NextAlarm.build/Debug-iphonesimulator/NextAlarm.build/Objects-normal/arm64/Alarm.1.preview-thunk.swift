@@ -9,14 +9,14 @@ import protocol SwiftUI.View
 import SwiftUI
 
 @_dynamicReplacement(for: addAlarm()) private func __preview__addAlarm() {
-#sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 104)
+#sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 118)
 
 #sourceLocation()
 }
 
 extension Alarm {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 21)
+        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 29)
         ZStack{
             Color(.black).ignoresSafeArea() //background
             
@@ -77,7 +77,7 @@ extension Alarm {
                    
             }
             
-            
+            // Add alarm button
             VStack {
                 Spacer()
                 Button(action: {
@@ -92,8 +92,14 @@ extension Alarm {
                             .padding(.top, __designTimeInteger("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[1].value", fallback: 25))
                             .padding(.bottom, __designTimeFloat("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[3].arg[1].value", fallback: 35.0))
                         Spacer()
-                    }.background(.black)
-                })
+                    }
+                }).background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.black.opacity(__designTimeInteger("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value.arg[0].value.[0].modifier[0].arg[0].value", fallback: 0)), Color.black.opacity(__designTimeInteger("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value.arg[0].value.[1].modifier[0].arg[0].value", fallback: 3))]),
+                        startPoint: UnitPoint(x: __designTimeFloat("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[1].value.arg[0].value", fallback: 0.5), y: __designTimeInteger("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[1].value.arg[1].value", fallback: 0)),
+                        endPoint: UnitPoint(x: __designTimeFloat("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[2].value.arg[0].value", fallback: 0.5), y: __designTimeInteger("#5231.[1].[1].property.[0].[0].arg[0].value.[2].arg[0].value.[1].modifier[0].arg[0].value.arg[2].value.arg[1].value", fallback: 1))
+                    )
+                )
             }
         }
     

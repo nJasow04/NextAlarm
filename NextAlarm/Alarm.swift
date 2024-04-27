@@ -11,9 +11,17 @@ struct Alarm: View {
     
     @State var alarmItems: [AlarmItem] = [
         AlarmItem(time: "8:00", meridian: "am", date: "Everyday"),
-                                          AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
-                                          AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-                                          AlarmItem(time: "8:10", meridian: "pm", date: "August 3rd, 2024")
+        AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:10", meridian: "pm", date: "August 3rd, 2024")
     ]
     
     
@@ -78,7 +86,7 @@ struct Alarm: View {
                    
             }
             
-            
+            // Add alarm button
             VStack {
                 Spacer()
                 Button(action: {
@@ -93,8 +101,14 @@ struct Alarm: View {
                             .padding(.top, 25)
                             .padding(.bottom, 35.0)
                         Spacer()
-                    }.background(.black)
-                })
+                    }
+                }).background(
+                    LinearGradient(
+                        gradient: Gradient(colors: [Color.black.opacity(0), Color.black.opacity(3)]),
+                        startPoint: UnitPoint(x: 0.5, y: 0),
+                        endPoint: UnitPoint(x: 0.5, y: 1)
+                    )
+                )
             }
         }
     }
