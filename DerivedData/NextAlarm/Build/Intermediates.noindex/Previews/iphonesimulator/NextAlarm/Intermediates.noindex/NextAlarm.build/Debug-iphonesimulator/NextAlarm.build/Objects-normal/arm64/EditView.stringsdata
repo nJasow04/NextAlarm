@@ -1,0 +1,20 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/EditView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Edit Alarm"
+      },
+      {
+        "comment": "",
+        "key": "Selected Alarm: %@"
+      }
+    ]
+  },
+  "version": 1
+}

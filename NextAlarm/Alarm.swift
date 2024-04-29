@@ -13,16 +13,13 @@ struct Alarm: View {
         AlarmItem(time: "8:00", meridian: "am", date: "Everyday"),
         AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
         AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
+        AlarmItem(time: "8:00", meridian: "am", date: "Everyday"),
+        AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
         AlarmItem(time: "8:10", meridian: "pm", date: "August 3rd, 2024")
     ]
+    
+    @State private var showEditView = false
+    @State private var selectedAlarm: AlarmItem?
     
     
     var body: some View {
@@ -46,6 +43,8 @@ struct Alarm: View {
                 
                 // List
                    List {
+                       
+                       // List Header
                        Section(header:
                                 HStack {
                                     Text("Swipe right to delete, Tap alarm to edit")
@@ -59,30 +58,20 @@ struct Alarm: View {
                                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                            
                        ) {
-                           ForEach(alarmItems, id: \.id) { item in
-                               HStack {
-                                   VStack(alignment: .leading) {
-                                       HStack {
-                                           Text(item.time).font(.title)
-                                           Text(item.meridian)
-                                       }
-                                       HStack {
-                                           Text(item.date).font(.caption)
-                                       }
-                                   }
-                                   .foregroundColor(.white)
-                                   .bold()
-                                   Spacer()
+                           
+                           // Alarms
+                           ForEach($alarmItems, id: \.id) { $item in
+                               AlarmRow(item: $item){
+                                   selectedAlarm = item
+                                   showEditView = true
                                }
-                               .padding(3)
-                               .background(Color.black)
-                               .listRowBackground(Color.black)
-                               .listRowSeparatorTint(.white)
                            }
                        }
                     
                    }
                    .listStyle(.plain)
+                   /*.padding(.bottom, 100)*/
+                
                    
             }
             
@@ -110,8 +99,20 @@ struct Alarm: View {
                     )
                 )
             }
+        }.sheet(isPresented: $showEditView) {
+            if let selectedAlarm = selectedAlarm {
+                EditView(item: binding(for: selectedAlarm))
+            }
         }
     }
+    
+    private func binding(for alarm: AlarmItem) -> Binding<AlarmItem> {
+        guard let index = alarmItems.firstIndex(where: { $0.id == alarm.id }) else {
+                fatalError("Alarm not found")
+            }
+            return $alarmItems[index]
+    }
+    
 }
 
 func addAlarm () {
