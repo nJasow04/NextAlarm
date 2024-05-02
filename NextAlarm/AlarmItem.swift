@@ -6,14 +6,19 @@
 //
 
 import Foundation
+import UserNotifications
 
 struct AlarmItem : Identifiable {
     
     var id: UUID = UUID()
     var active = true                       // Might have to change this
-    var time: String
+    var hour: Int
+    var minute: Int
     var meridian: String
-    var date: String
+    var date = "Everyday"
+    var header = "Untitled"
+    var description = "None"
+    var silent = false
     // var sound: String
     
     mutating func togButton () {
@@ -21,7 +26,32 @@ struct AlarmItem : Identifiable {
         active = !active
     }
     
-    mutating func edit () {
+    
+    func setAlarm(hour: Int, minute: Int, meridian: Bool) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
+            if granted {
+                let content = UNMutableNotificationContent()
+                content.title = "Wake Up!"
+                content.sound = UNNotificationSound.default
+
+                var dateComponents = DateComponents()
+                if meridian {
+                    dateComponents.hour = hour
+                } else {
+                    dateComponents.hour = hour + 12
+                }
+                dateComponents.minute = minute
+
+                let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+                let request = UNNotificationRequest(identifier: "WakeUpAlarm", content: content, trigger: trigger)
+                center.add(request)
+            }
+        }
+    }
+    
+    
+    mutating func edit (hour: Int, minute: Int, meridian: String, date: String = "Everyday", header: String = "Untitled", description: String = "", silent: Bool = false) {
         /*
             Set to the item itself
             1. time -> Rolling thingy for the hour, minute, and am/pm
@@ -30,6 +60,13 @@ struct AlarmItem : Identifiable {
             3. Sounds, can implement later, for now just one sound is fine
             4. Snooze?
         */
+        self.hour = hour
+        self.minute = minute
+        self.meridian = meridian
+        self.date = date
+        self.header = header
+        self.description = description
+        self.silent = silent
         
         
     }

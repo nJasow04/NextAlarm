@@ -4,6 +4,10 @@
     "Localizable": [
       {
         "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
         "key": "Save"
       },
       {
@@ -13,6 +17,30 @@
       {
         "comment": "",
         "key": "Selected Alarm: %@"
+      },
+      {
+        "comment": "",
+        "key": "Select Time"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Label"
+      },
+      {
+        "comment": "",
+        "key": "Description"
+      },
+      {
+        "comment": "",
+        "key": "Silent"
+      },
+      {
+        "comment": "",
+        "key": "Enter a title"
       }
     ]
   },

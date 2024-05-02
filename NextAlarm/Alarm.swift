@@ -10,17 +10,7 @@ import SwiftUI
 struct Alarm: View {
     
     @State var alarmItems: [AlarmItem] = [
-        AlarmItem(time: "8:00", meridian: "am", date: "Everyday"),
-        AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
-        AlarmItem(time: "8:10", meridian: "am", date: "Weekends"),
-        AlarmItem(time: "8:00", meridian: "am", date: "Everyday"),
-        AlarmItem(time: "8:05", meridian: "am", date: "Tuesdays, Wednesdays, and Fridays"),
-        AlarmItem(time: "8:10", meridian: "pm", date: "August 3rd, 2024")
-    ]
-    
-    @State private var showEditView = false
-    @State private var selectedAlarm: AlarmItem?
-    
+        AlarmItem(hour: 8, minute: 15, meridian: "pm", date: "Weekends", header: "Wake Up"),]
     
     var body: some View {
         ZStack{
@@ -60,11 +50,8 @@ struct Alarm: View {
                        ) {
                            
                            // Alarms
-                           ForEach($alarmItems, id: \.id) { $item in
-                               AlarmRow(item: $item){
-                                   selectedAlarm = item
-                                   showEditView = true
-                               }
+                           ForEach($alarmItems) { $item in
+                               AlarmRow(item: $item)
                            }
                        }
                     
@@ -72,7 +59,6 @@ struct Alarm: View {
                    .listStyle(.plain)
                    /*.padding(.bottom, 100)*/
                 
-                   
             }
             
             // Add alarm button
@@ -99,18 +85,7 @@ struct Alarm: View {
                     )
                 )
             }
-        }.sheet(isPresented: $showEditView) {
-            if let selectedAlarm = selectedAlarm {
-                EditView(item: binding(for: selectedAlarm))
-            }
         }
-    }
-    
-    private func binding(for alarm: AlarmItem) -> Binding<AlarmItem> {
-        guard let index = alarmItems.firstIndex(where: { $0.id == alarm.id }) else {
-                fatalError("Alarm not found")
-            }
-            return $alarmItems[index]
     }
     
 }

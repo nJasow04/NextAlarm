@@ -1,0 +1,48 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Build/Intermediates.noindex/Previews/iphonesimulator/NextAlarm/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/Objects-normal/arm64/EditView.1.preview-thunk.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Cancel"
+      },
+      {
+        "comment": "",
+        "key": "Save"
+      },
+      {
+        "comment": "",
+        "key": "Selected Alarm: %@"
+      },
+      {
+        "comment": "",
+        "key": "Edit Alarm"
+      },
+      {
+        "comment": "",
+        "key": "Select Time"
+      },
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Label"
+      },
+      {
+        "comment": "",
+        "key": "Description"
+      },
+      {
+        "comment": "",
+        "key": "Silent"
+      },
+      {
+        "comment": "",
+        "key": "Enter a title"
+      }
+    ]
+  },
+  "version": 1
+}

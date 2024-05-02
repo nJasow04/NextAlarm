@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D296CB532BDD13FE00F059C0 /* AlarmRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296CB522BDD13FE00F059C0 /* AlarmRow.swift */; };
 		D296CB552BDECA6700F059C0 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D296CB542BDECA6700F059C0 /* EditView.swift */; };
+		D2E9B1BE2BE39B85006C218D /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E9B1BD2BE39B85006C218D /* DateView.swift */; };
 		D2F360352BDA18CD007A5868 /* AlarmItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F360342BDA18CD007A5868 /* AlarmItem.swift */; };
 		D2FD4FC72BD8A6BA00ABC731 /* NextAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FD4FC62BD8A6BA00ABC731 /* NextAlarmApp.swift */; };
 		D2FD4FCB2BD8A6BB00ABC731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FD4FCA2BD8A6BB00ABC731 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		D296CB522BDD13FE00F059C0 /* AlarmRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmRow.swift; sourceTree = "<group>"; };
 		D296CB542BDECA6700F059C0 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
+		D2E9B1BD2BE39B85006C218D /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
 		D2F360342BDA18CD007A5868 /* AlarmItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmItem.swift; sourceTree = "<group>"; };
 		D2FD4FC32BD8A6BA00ABC731 /* NextAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FD4FC62BD8A6BA00ABC731 /* NextAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextAlarmApp.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				D2F360342BDA18CD007A5868 /* AlarmItem.swift */,
 				D296CB522BDD13FE00F059C0 /* AlarmRow.swift */,
 				D296CB542BDECA6700F059C0 /* EditView.swift */,
+				D2E9B1BD2BE39B85006C218D /* DateView.swift */,
 			);
 			path = NextAlarm;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				D2FD4FD52BD983A200ABC731 /* Timer.swift in Sources */,
 				D2FD4FDD2BD9AFDB00ABC731 /* ContentView.swift in Sources */,
 				D2FD4FC72BD8A6BA00ABC731 /* NextAlarmApp.swift in Sources */,
+				D2E9B1BE2BE39B85006C218D /* DateView.swift in Sources */,
 				D2FD4FD72BD985F300ABC731 /* Alarm.swift in Sources */,
 				D2FD4FDB2BD9869A00ABC731 /* StopWatch.swift in Sources */,
 			);

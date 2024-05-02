@@ -10,39 +10,46 @@ import SwiftUI
 struct AlarmRow : View {
     
     @Binding var item: AlarmItem
-    var onEdit: () -> Void
+    @State private var showEditView = false
+//    var onEdit: () -> Void
         
-        var body: some View {
-            HStack {
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text(item.time).font(.title)
-                        Text(item.meridian)
+    var body: some View {
+        HStack {
+            Button(action: {
+                showEditView = true
+            }, label: {
+                HStack{
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text(String(item.hour) + ":" + String(item.minute)).font(.title)
+                            Text(item.meridian)
+                        }
+                        Text(item.header + ", " + item.date).font(.caption)
                     }
-                    Text(item.date).font(.caption)
+                    .foregroundColor(.white)
+                    .bold()
+                    
+                    Spacer()
+                    
+                    Toggle(isOn: $item.active) {
+                        Text("")
+                    }
+                    .labelsHidden()
+                    .tint(Color(red: 137/255, green: 187/255, blue: 1))
                 }
-                .foregroundColor(.white)
-                .bold()
-                
-                Spacer()
-                
-                Toggle(isOn: $item.active) {
-                    Text("")
-                }
-                .labelsHidden()
-                .tint(Color(red: 137/255, green: 187/255, blue: 1))
-            }
-            .padding(3)
-            .background(Color.black)
-            .listRowBackground(Color.black)
-            .listRowSeparatorTint(.white)
-            .contentShape(Rectangle())
-            .onTapGesture {
-                onEdit()
-            }
+            })
         }
+        .padding(3)
+        .background(Color.black)
+        .listRowBackground(Color.black)
+        .listRowSeparatorTint(.white)
+        .contentShape(Rectangle())
+        .sheet(isPresented: $showEditView) {
+            EditView(item: $item)
+        }
+    }
 }
 
-//#Preview {
-//    AlarmRow(item: .constant(AlarmItem(active: true, time: "8:00", meridian: "AM", date: "Everyday")))
-//}
+#Preview {
+    AlarmRow(item: .constant(AlarmItem(active: true, hour: 8, minute: 15, meridian: "AM", date: "Everyday", header: "Breakfast")))
+}

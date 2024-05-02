@@ -6,7 +6,7 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>3674B3E5-7F73-4A55-88D8-29AD0EF12F61</key>
+		<key>0D2F93D2-8E3B-4C56-BBA4-13CA045553CC</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,17 +15,17 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>3674B3E5-7F73-4A55-88D8-29AD0EF12F61.xcactivitylog</string>
+			<string>0D2F93D2-8E3B-4C56-BBA4-13CA045553CC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>E</string>
+				<string>S</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>timeStartedRecording</key>
-			<real>736065157.64468801</real>
+			<real>736339790.14453399</real>
 			<key>timeStoppedRecording</key>
-			<real>736065157.89091206</real>
+			<real>736339791.39326298</real>
 			<key>title</key>
 			<string>Build for Previews NextAlarm</string>
 			<key>uniqueIdentifier</key>
-			<string>3674B3E5-7F73-4A55-88D8-29AD0EF12F61</string>
+			<string>0D2F93D2-8E3B-4C56-BBA4-13CA045553CC</string>
 		</dict>
 	</dict>
 </dict>
