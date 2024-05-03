@@ -17,8 +17,7 @@ struct AlarmItem : Identifiable {
     var meridian: String
     var date = "Everyday"
     var header = ""
-    var description = "None"
-    var silent = false
+    var description = ""
     // var sound: String
     
     mutating func togButton () {
@@ -51,7 +50,7 @@ struct AlarmItem : Identifiable {
     }
     
     
-    mutating func edit (hour: Int, minute: Int, meridian: String, date: String = "Everyday", header: String = "Untitled", description: String = "", silent: Bool = false) {
+    mutating func edit (hour: Int, minute: Int, meridian: String, date: String = "Everyday", header: String = "Untitled", description: String = "") {
         /*
             Set to the item itself
             1. time -> Rolling thingy for the hour, minute, and am/pm
@@ -66,7 +65,6 @@ struct AlarmItem : Identifiable {
         self.date = date
         self.header = header
         self.description = description
-        self.silent = silent
         
         
     }
