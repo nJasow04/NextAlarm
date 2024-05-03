@@ -1,0 +1,20 @@
+{
+  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/DateView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Select Date"
+      },
+      {
+        "comment": "",
+        "key": ""
+      }
+    ]
+  },
+  "version": 1
+}

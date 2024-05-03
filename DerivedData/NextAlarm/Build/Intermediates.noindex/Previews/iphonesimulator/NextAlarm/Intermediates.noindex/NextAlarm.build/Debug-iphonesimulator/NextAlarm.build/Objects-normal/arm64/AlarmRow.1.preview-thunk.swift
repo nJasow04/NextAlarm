@@ -10,7 +10,7 @@ import SwiftUI
 
 extension AlarmRow {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/AlarmRow.swift", line: 25)
+        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/AlarmRow.swift", line: 26)
         
         HStack {
             Button(action: {
@@ -39,6 +39,7 @@ extension AlarmRow {
                     }
                     .foregroundColor(.white)
                     .bold()
+                    .opacity(item.getOpacity())
                     
                     Spacer()
                     

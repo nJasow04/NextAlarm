@@ -19,8 +19,9 @@ struct AlarmRow : View {
             window.backgroundColor = color
         }
     }
-//    var onEdit: () -> Void
-        
+    
+    
+    
     var body: some View {
         
         HStack {
@@ -50,6 +51,7 @@ struct AlarmRow : View {
                     }
                     .foregroundColor(.white)
                     .bold()
+                    .opacity(item.getOpacity())
                     
                     Spacer()
                     
