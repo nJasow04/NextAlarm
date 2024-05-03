@@ -24,7 +24,11 @@ struct AlarmRow : View {
                             Text(String(item.hour) + ":" + String(item.minute)).font(.title)
                             Text(item.meridian)
                         }
-                        Text(item.header + ", " + item.date).font(.caption)
+                        if item.header.isEmpty {
+                            Text("Untitled, " + item.date).font(.caption)
+                        } else {
+                            Text(item.header + ", " + item.date).font(.caption)
+                        }
                     }
                     .foregroundColor(.white)
                     .bold()

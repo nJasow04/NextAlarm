@@ -21,7 +21,11 @@ extension AlarmRow {
                             Text(String(item.hour) + __designTimeString("#10741.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[0].value.[0]", fallback: ":") + String(item.minute)).font(.title)
                             Text(item.meridian)
                         }
-                        Text(item.header + __designTimeString("#10741.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].arg[0].value.[0]", fallback: ", ") + item.date).font(.caption)
+                        if item.header.isEmpty {
+                            Text(__designTimeString("#10741.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[0].[0].arg[0].value.[0]", fallback: ", ") + item.date).font(.caption)
+                        } else {
+                            Text(item.header + __designTimeString("#10741.[1].[2].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[1].[0].arg[0].value.[0]", fallback: ", ") + item.date).font(.caption)
+                        }
                     }
                     .foregroundColor(.white)
                     .bold()

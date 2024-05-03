@@ -1,5 +1,12 @@
 {
   "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/DateView.swift",
-  "tables": {},
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "hello world"
+      }
+    ]
+  },
   "version": 1
 }

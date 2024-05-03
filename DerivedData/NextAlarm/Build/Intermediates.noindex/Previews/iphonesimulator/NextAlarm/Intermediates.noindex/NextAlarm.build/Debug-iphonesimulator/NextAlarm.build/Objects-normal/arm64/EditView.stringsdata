@@ -1,5 +1,5 @@
 {
-  "source": "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/EditView.swift",
+  "source": "/Users/jasonwan/.Trash/EditView.swift",
   "tables": {
     "Localizable": [
       {
@@ -13,6 +13,10 @@
       {
         "comment": "",
         "key": "Edit Alarm"
+      },
+      {
+        "comment": "",
+        "key": "Selected Alarm: Untitled"
       },
       {
         "comment": "",
@@ -40,7 +44,11 @@
       },
       {
         "comment": "",
-        "key": "Enter a title"
+        "key": "Untitled"
+      },
+      {
+        "comment": "",
+        "key": ""
       }
     ]
   },

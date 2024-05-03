@@ -20,6 +20,10 @@
       },
       {
         "comment": "",
+        "key": "Selected Alarm: Untitled"
+      },
+      {
+        "comment": "",
         "key": "Select Time"
       },
       {
@@ -40,7 +44,11 @@
       },
       {
         "comment": "",
-        "key": "Enter a title"
+        "key": ""
+      },
+      {
+        "comment": "",
+        "key": "Untitled"
       }
     ]
   },

@@ -12,7 +12,7 @@ extension DateView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
         #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/DateView.swift", line: 12)
         ZStack{
-            Color.black.ignoresSafeArea()
+            Text(__designTimeString("#67359.[1].[0].property.[0].[0].arg[0].value.[0].arg[0].value", fallback: "hello world"))
         }
     
 #sourceLocation()

@@ -16,7 +16,7 @@ struct AlarmItem : Identifiable {
     var minute: Int
     var meridian: String
     var date = "Everyday"
-    var header = "Untitled"
+    var header = ""
     var description = "None"
     var silent = false
     // var sound: String

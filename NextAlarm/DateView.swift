@@ -10,7 +10,7 @@ import SwiftUI
 struct DateView: View {
     var body: some View {
         ZStack{
-            Color.black.ignoresSafeArea()
+            Text("hello world")
         }
     }
 }
