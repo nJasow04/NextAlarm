@@ -11,6 +11,7 @@ struct Alarm: View {
     
     @State private var showEditView = false
     @State private var addedAlarm = AlarmItem()
+    @State private var isSheetPresented = false
     @State var alarmItems: [AlarmItem] = [
         AlarmItem(hour: 8, minute: 15, meridian: "pm", date: "Weekends", dateSet: ["Weekends"], header: "Wake Up"),]
     
@@ -70,7 +71,7 @@ struct Alarm: View {
                 Button(action: {
                     addedAlarm = AlarmItem()
                     
-                    alarmItems.append(addedAlarm)
+//                    alarmItems.append(addedAlarm)
                     showEditView = true
                 }, label: {
                     
@@ -97,6 +98,14 @@ struct Alarm: View {
             EditView(item: $addedAlarm).onAppear {
                 setWindowBackgroundColor(.black) // Set the background color behind the sheet
             }
+        }.onChange(of: showEditView) { newValue in
+            if !newValue {
+                alarmItems.append(addedAlarm)
+                setWindowBackgroundColor(.black) // Reset the background color
+            }
+        }
+        .onChange(of: isSheetPresented) { newValue in
+            showEditView = newValue
         }
     }
     
