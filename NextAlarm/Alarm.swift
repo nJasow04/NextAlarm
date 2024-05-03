@@ -56,6 +56,16 @@ struct Alarm: View {
                            // Alarms
                            ForEach($alarmItems) { $item in
                                AlarmRow(item: $item)
+                                   .swipeActions(edge: .leading, allowsFullSwipe: true) {
+                                   Button(role: .destructive) {
+                                       if let index = alarmItems.firstIndex(where: { $0.id == item.id }) {
+                                           alarmItems.remove(at: index)
+                                       }
+                                   } label: {
+                                       Label("Delete", systemImage: "trash")
+                                   }
+                                   .tint(.red)
+                               }
                            }
                        }
                     
@@ -98,14 +108,14 @@ struct Alarm: View {
             EditView(item: $addedAlarm).onAppear {
                 setWindowBackgroundColor(.black) // Set the background color behind the sheet
             }
-        }.onChange(of: showEditView) { newValue in
-            if !newValue {
+        }.onChange(of: showEditView) {
+            if !showEditView {
                 alarmItems.append(addedAlarm)
                 setWindowBackgroundColor(.black) // Reset the background color
             }
         }
-        .onChange(of: isSheetPresented) { newValue in
-            showEditView = newValue
+        .onChange(of: isSheetPresented) {
+            showEditView = isSheetPresented
         }
     }
     

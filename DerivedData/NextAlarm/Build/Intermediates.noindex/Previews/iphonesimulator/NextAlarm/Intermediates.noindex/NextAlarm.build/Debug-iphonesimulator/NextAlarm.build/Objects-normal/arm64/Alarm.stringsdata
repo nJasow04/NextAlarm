@@ -9,6 +9,10 @@
       {
         "comment": "",
         "key": "Swipe right to delete, Tap alarm to edit"
+      },
+      {
+        "comment": "",
+        "key": "Delete"
       }
     ]
   },

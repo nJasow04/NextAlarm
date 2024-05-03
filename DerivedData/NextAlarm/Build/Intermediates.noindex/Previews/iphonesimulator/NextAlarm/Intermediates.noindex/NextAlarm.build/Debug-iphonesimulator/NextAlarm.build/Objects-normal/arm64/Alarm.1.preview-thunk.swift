@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Alarm {
     @_dynamicReplacement(for: setWindowBackgroundColor(_:)) private func __preview__setWindowBackgroundColor(_ color: UIColor) {
-        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 113)
+        #sourceLocation(file: "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/Alarm.swift", line: 123)
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
             let window = windowScene.windows.first
         {
@@ -64,6 +64,16 @@ extension Alarm {
                            // Alarms
                            ForEach($alarmItems) { $item in
                                AlarmRow(item: $item)
+                                   .swipeActions(edge: .leading, allowsFullSwipe: __designTimeBoolean("#25960.[1].[4].property.[0].[0].arg[0].value.[1].arg[0].value.[1].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].modifier[0].arg[1].value", fallback: true)) {
+                                   Button(role: .destructive) {
+                                       if let index = alarmItems.firstIndex(where: { $0.id == item.id }) {
+                                           alarmItems.remove(at: index)
+                                       }
+                                   } label: {
+                                       Label(__designTimeString("#25960.[1].[4].property.[0].[0].arg[0].value.[1].arg[0].value.[1].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].modifier[0].arg[2].value.[0].arg[2].value.[0].arg[0].value", fallback: "Delete"), systemImage: __designTimeString("#25960.[1].[4].property.[0].[0].arg[0].value.[1].arg[0].value.[1].arg[0].value.[0].arg[1].value.[0].arg[1].value.[0].modifier[0].arg[2].value.[0].arg[2].value.[0].arg[1].value", fallback: "trash"))
+                                   }
+                                   .tint(.red)
+                               }
                            }
                        }
                     
@@ -106,14 +116,14 @@ extension Alarm {
             EditView(item: $addedAlarm).onAppear {
                 setWindowBackgroundColor(.black) // Set the background color behind the sheet
             }
-        }.onChange(of: showEditView) { newValue in
-            if !newValue {
+        }.onChange(of: showEditView) {
+            if !showEditView {
                 alarmItems.append(addedAlarm)
                 setWindowBackgroundColor(.black) // Reset the background color
             }
         }
-        .onChange(of: isSheetPresented) { newValue in
-            showEditView = newValue
+        .onChange(of: isSheetPresented) {
+            showEditView = isSheetPresented
         }
     
 #sourceLocation()

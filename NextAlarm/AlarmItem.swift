@@ -12,11 +12,11 @@ struct AlarmItem : Identifiable {
     
     var id: UUID = UUID()
     var active = true                       // Might have to change this
-    var hour = 8
+    var hour = 13
     var minute = 5
     var meridian = "am"
     var date = ""
-    var dateSet = ["Tuesday"]
+    var dateSet = ["Everyday"]
     var header = ""
     var description = ""
     // var sound: String
@@ -71,10 +71,6 @@ struct AlarmItem : Identifiable {
         
         self.date = self.dateSet.joined(separator: ", ")
         
-    }
-    
-    mutating func deleteAlarm() {           // Swipe Right
- 
     }
     
     
