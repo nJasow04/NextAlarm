@@ -4,7 +4,15 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "hello world"
+        "key": "Date"
+      },
+      {
+        "comment": "",
+        "key": "Select Date"
+      },
+      {
+        "comment": "",
+        "key": ""
       }
     ]
   },

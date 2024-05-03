@@ -12,13 +12,16 @@ struct AlarmItem : Identifiable {
     
     var id: UUID = UUID()
     var active = true                       // Might have to change this
-    var hour: Int
-    var minute: Int
-    var meridian: String
-    var date = "Everyday"
+    var hour = 8
+    var minute = 5
+    var meridian = "am"
+    var date = ""
+    var dateSet = ["Tuesday"]
     var header = ""
     var description = ""
     // var sound: String
+    
+    
     
     mutating func togButton () {
         // Set to the toggle
@@ -50,7 +53,7 @@ struct AlarmItem : Identifiable {
     }
     
     
-    mutating func edit (hour: Int, minute: Int, meridian: String, date: String = "Everyday", header: String = "Untitled", description: String = "") {
+    mutating func edit (hour: Int, minute: Int, meridian: String, date: String = "Everyday", dateSet: [String] = ["Everyday"], header: String = "Untitled", description: String = "") {
         /*
             Set to the item itself
             1. time -> Rolling thingy for the hour, minute, and am/pm
@@ -62,10 +65,11 @@ struct AlarmItem : Identifiable {
         self.hour = hour
         self.minute = minute
         self.meridian = meridian
-        self.date = date
+        self.dateSet = dateSet
         self.header = header
         self.description = description
         
+        self.date = self.dateSet.joined(separator: ", ")
         
     }
     

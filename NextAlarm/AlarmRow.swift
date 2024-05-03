@@ -11,9 +11,18 @@ struct AlarmRow : View {
     
     @Binding var item: AlarmItem
     @State private var showEditView = false
+    
+    private func setWindowBackgroundColor(_ color: UIColor) {
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let window = windowScene.windows.first
+        {
+            window.backgroundColor = color
+        }
+    }
 //    var onEdit: () -> Void
         
     var body: some View {
+        
         HStack {
             Button(action: {
                 showEditView = true
@@ -21,10 +30,19 @@ struct AlarmRow : View {
                 HStack{
                     VStack(alignment: .leading) {
                         HStack {
-                            Text(String(item.hour) + ":" + String(item.minute)).font(.title)
+                            if item.minute < 10 {
+                                Text(String(item.hour) + ":0" + String(item.minute)).font(.title)
+                            } else {
+                                Text(String(item.hour) + ":" + String(item.minute)).font(.title)
+                            }
                             Text(item.meridian)
                         }
-                        if item.header.isEmpty {
+                        
+                        // Bandaid
+                        if item.header.isEmpty && item.date.isEmpty {
+                            Text("Untitled, Everyday").font(.caption)
+                        }
+                        else if item.header.isEmpty{
                             Text("Untitled, " + item.date).font(.caption)
                         } else {
                             Text(item.header + ", " + item.date).font(.caption)
@@ -49,11 +67,14 @@ struct AlarmRow : View {
         .listRowSeparatorTint(.white)
         .contentShape(Rectangle())
         .sheet(isPresented: $showEditView) {
-            EditView(item: $item)
+            EditView(item: $item).onAppear {
+                setWindowBackgroundColor(.black) // Set the background color behind the sheet
+            }
         }
+//        .background(Color.black.edgesIgnoringSafeArea(.all)) 
     }
 }
 
 #Preview {
-    AlarmRow(item: .constant(AlarmItem(active: true, hour: 8, minute: 15, meridian: "AM", date: "Everyday", header: "Breakfast")))
+    AlarmRow(item: .constant(AlarmItem(active: true, hour: 8, minute: 15, meridian: "AM", date: "Everyday", dateSet: ["Everyday"], header: "Breakfast")))
 }

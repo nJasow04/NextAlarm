@@ -9,20 +9,29 @@ import protocol SwiftUI.View
 import SwiftUI
 
 extension EditView {
+    @_dynamicReplacement(for: accumulateToString(dateSet:)) private func __preview__accumulateToString(dateSet: [String]) -> String {
+        #sourceLocation(file: "/Users/jasonwan/.Trash/EditView.swift", line: 186)
+        return dateSet.joined(separator: __designTimeString("#25713.[1].[7].[0].modifier[0].arg[0].value", fallback: ", "))
+    
+#sourceLocation()
+    }
+}
+
+extension EditView {
     @_dynamicReplacement(for: body) private var __preview__body: some View {
-        #sourceLocation(file: "/Users/jasonwan/.Trash/EditView.swift", line: 20)
+        #sourceLocation(file: "/Users/jasonwan/.Trash/EditView.swift", line: 23)
         NavigationView {
             
             ZStack {
                 Color.black.ignoresSafeArea()
                 
                 VStack {
-                    Text(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].arg[0].value", fallback: "Edit Alarm"))
+                    Text(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].arg[0].value", fallback: "Edit Alarm"))
                         .font(.title)
-                        .foregroundColor(Color(red: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 1)))
+                        .foregroundColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 1)))
                     
                     if item.header.isEmpty {
-                        Text(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[1].[0].[0].arg[0].value", fallback: "Selected Alarm: Untitled"))
+                        Text(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[1].[0].[0].arg[0].value", fallback: "Selected Alarm: Untitled"))
                             .foregroundColor(.white).frame(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     } else {
                         Text("Selected Alarm: \(item.header)")
@@ -30,10 +39,10 @@ extension EditView {
                     }
                     
                     
-                    DatePicker(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[2].arg[0].value", fallback: "Select Time"), selection: $selectedTime, displayedComponents: [.hourAndMinute])
+                    DatePicker(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[2].arg[0].value", fallback: "Select Time"), selection: $selectedTime, displayedComponents: [.hourAndMinute])
                         .datePickerStyle(WheelDatePickerStyle())
                         .colorScheme(.dark)
-                        .cornerRadius(__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[2].modifier[2].arg[0].value", fallback: 10))
+                        .cornerRadius(__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[2].modifier[2].arg[0].value", fallback: 10))
                         .labelsHidden()
                         .padding()
                     
@@ -41,136 +50,124 @@ extension EditView {
                     
                     
                     Form {
-                        LabeledContent(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[0].value", fallback: "Date")) {
+                        
+                        
+                        // Date
+                        LabeledContent(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[0].value", fallback: "Date")) {
             
                             HStack {
                                 Spacer()
-                                NavigationLink(destination: DateView()) {
-                                    Text(item.date).frame(maxWidth: .infinity, alignment: .trailing).opacity(__designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[1].arg[0].value", fallback: 0.9)).foregroundColor(Color(red: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value", fallback: 1)))
+                                NavigationLink(destination: DateView(selectedDateString: $selectedDateString)) {
+                                    Text(accumulateToString(dateSet: selectedDateString))
+                                        .frame(maxWidth: .infinity, alignment: .trailing)
+                                        .opacity(__designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[1].arg[0].value", fallback: 0.9))
+                                        .foregroundColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].arg[1].value.[0].arg[0].value.[1].arg[1].value.[0].modifier[2].arg[0].value.arg[2].value", fallback: 1)))
 
                                 }.accentColor(.red)
                                 /*.tint(Color(red: 137/255, green: 187/255, blue: 1))*/
                             }
 
                             
-                        }.listRowBackground(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
-                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
+                        }.listRowBackground(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
+                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[0].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
                         
-                        LabeledContent(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[0].value", fallback: "Label")) {
+                        
+                        
+                        
+                        
+                        
+                        // Header
+                        LabeledContent(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[0].value", fallback: "Label")) {
                             HStack {
                                 Spacer()
-                                TextField(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: ""), text: $headerText, prompt: Text(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.arg[0].value", fallback: "Untitled")).foregroundColor(Color(red: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[2].value", fallback: 1)).opacity(__designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.modifier[0].arg[0].value", fallback: 0.9))))
+                                TextField(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[0].value", fallback: ""), text: $headerText, prompt: Text(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.arg[0].value", fallback: "Untitled")).foregroundColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.arg[2].value", fallback: 1)).opacity(__designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].arg[2].value.modifier[0].arg[0].value.modifier[0].arg[0].value", fallback: 0.5))))
                                         .multilineTextAlignment(.trailing)
                                         .foregroundColor(.gray)
-                                        .lineLimit(__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 1))
+                                        .lineLimit(__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[2].arg[0].value", fallback: 1))
                                         .truncationMode(.middle)
                                         .onChange(of: headerText) { _, _ in
-                                            headerText = String(headerText.prefix(__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[4].arg[1].value.[0].[0]", fallback: 25))) // Limit the length to 20 characters
+                                            headerText = String(headerText.prefix(__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[1].modifier[4].arg[1].value.[0].[0]", fallback: 25))) // Limit the length to 20 characters
                                         }
                                     
                                 Button(action: {
-                                    headerText = __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[2].arg[0].value.[0].[0]", fallback: "") // Clear the text field when the 'x' button is tapped
+                                    headerText = __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[2].arg[0].value.[0].[0]", fallback: "") // Clear the text field when the 'x' button is tapped
                                 }) {
-                                    Image(systemName: __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[2].arg[1].value.[0].arg[0].value", fallback: "xmark.circle.fill"))
+                                    Image(systemName: __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].arg[1].value.[0].arg[0].value.[2].arg[1].value.[0].arg[0].value", fallback: "xmark.circle.fill"))
                                         .foregroundColor(.gray)
                                 }.buttonStyle(.borderless)
                             }
                             
-                        }.listRowBackground(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
-                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
+                        }.listRowBackground(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
+                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[1].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
                         
-//                        LabeledContent("Description") {
-//                        
-//                            TextEditor(text: $item.description)
-//                                .frame(height: 100)
-//                                .textFieldStyle(RoundedBorderTextFieldStyle())
-//                                .lineLimit(nil)
-//                                .truncationMode(.tail)
-//                            
-//                        }.listRowBackground(Color(hue: 0.0, saturation: 0.0, brightness: 0.175))
-//                            .listRowSeparatorTint(Color(hue: 1.0, saturation: 0.0, brightness: 0.771))
                        
-                        
+                        // Description
                         VStack {
                             HStack {
-                                Text(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "Description"))
+                                Text(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[0].arg[0].value.[0].arg[0].value", fallback: "Description"))
                                 Spacer()
                             }
                             
                             HStack {
-                                TextField(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[0].value", fallback: ""), text: $descriptionText, prompt: Text(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.arg[0].value", fallback: "None")).foregroundColor(Color(red: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[2].value", fallback: 1)).opacity(__designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.modifier[0].arg[0].value", fallback: 0.5))), axis: .vertical)
+                                TextField(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[0].value", fallback: ""), text: $descriptionText, prompt: Text(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.arg[0].value", fallback: "None")).foregroundColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.arg[2].value", fallback: 1)).opacity(__designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].arg[2].value.modifier[0].arg[0].value.modifier[0].arg[0].value", fallback: 0.5))), axis: .vertical)
 //                                        .multilineTextAlignment(.trailing)
                                         .foregroundColor(.gray)
                                         .onChange(of: descriptionText) { _, _ in
-                                            descriptionText = String(descriptionText.prefix(__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[1].value.[0].[0]", fallback: 190))) // Limit the length to 20 characters
+                                            descriptionText = String(descriptionText.prefix(__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[0].modifier[1].arg[1].value.[0].[0]", fallback: 190))) // Limit the length to 20 characters
                                         }
                                     
                                 Button(action: {
-                                    descriptionText = __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[1].arg[0].value.[0].[0]", fallback: "") // Clear the text field when the 'x' button is tapped
+                                    descriptionText = __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[1].arg[0].value.[0].[0]", fallback: "") // Clear the text field when the 'x' button is tapped
                                 }) {
-                                    Image(systemName: __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[1].arg[1].value.[0].arg[0].value", fallback: "xmark.circle.fill"))
+                                    Image(systemName: __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].arg[0].value.[1].arg[0].value.[1].arg[1].value.[0].arg[0].value", fallback: "xmark.circle.fill"))
                                         .foregroundColor(.gray)
                                 }.buttonStyle(.borderless)
                             }
                             
-                        }.listRowBackground(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
-                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
-                        
-                        
-                        
-//                        LabeledContent("Silent") {
-//                        
-//                            HStack {
-//                                Spacer()
-//                                Image(systemName: item.silent ? "checkmark.square.fill" : "square")
-//                                    .foregroundColor(.blue)
-//                                    .onTapGesture {
-//                                        item.silent.toggle()
-//                                    }
-//                            }
-//                    
-//                        }.listRowBackground(Color(hue: 0.0, saturation: 0.0, brightness: 0.175))
-//                            .listRowSeparatorTint(Color(hue: 1.0, saturation: 0.0, brightness: 0.771))
-                        
-                    }.scrollContentBackground(.hidden)
-                        .foregroundColor(.white)
-                        . scrollDisabled(__designTimeBoolean("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].modifier[2].arg[0].value", fallback: true))
+                        }.listRowBackground(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[0].value", fallback: 0.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[0].arg[0].value.arg[2].value", fallback: 0.175)))
+                            .listRowSeparatorTint(Color(hue: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value", fallback: 1.0), saturation: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value", fallback: 0.0), brightness: __designTimeFloat("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].arg[0].value.[2].modifier[1].arg[0].value.arg[2].value", fallback: 0.771)))
                         
                     
                     
-                    
+                    } // Form closing brace
+                    .scrollContentBackground(.hidden)
+                    .foregroundColor(.white)
+                    . scrollDisabled(__designTimeBoolean("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].arg[0].value.[3].modifier[2].arg[0].value", fallback: true))
+                        
                     
                     Spacer()
                 }
                 .padding()
                 .navigationBarItems(
-                    leading: Button(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[0].value.arg[0].value", fallback: "Cancel")) {
+                    leading: Button(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[0].value.arg[0].value", fallback: "Cancel")) {
                         presentationMode.wrappedValue.dismiss()
                     },
-                    trailing: Button(__designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[0].value", fallback: "Save")) {
+                    trailing: Button(__designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[0].value", fallback: "Save")) {
                         let dateFormatter = DateFormatter()
-                        dateFormatter.dateFormat = __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[1].[0]", fallback: "h:mm a")
+                        dateFormatter.dateFormat = __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[1].[0]", fallback: "h:mm a")
         
                         let timeString = dateFormatter.string(from: selectedTime)
-                        let components = timeString.components(separatedBy: __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[3].value.modifier[0].arg[0].value", fallback: " "))
+                        let components = timeString.components(separatedBy: __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[3].value.modifier[0].arg[0].value", fallback: " "))
                                         
-                        let hour = Int(components[__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[0]", fallback: 0)].components(separatedBy: __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[1]", fallback: ":"))[__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[2]", fallback: 0)]) ?? __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[3]", fallback: 0)
-                        let minute = Int(components[__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[0]", fallback: 0)].components(separatedBy: __designTimeString("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[1]", fallback: ":"))[__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[2]", fallback: 1)]) ?? __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[3]", fallback: 0)
-                        let meridian = components[__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[6].value.[0].value", fallback: 1)]
+                        let hour = Int(components[__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[0]", fallback: 0)].components(separatedBy: __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[1]", fallback: ":"))[__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[2]", fallback: 0)]) ?? __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[4].value.[3]", fallback: 0)
+                        let minute = Int(components[__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[0]", fallback: 0)].components(separatedBy: __designTimeString("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[1]", fallback: ":"))[__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[2]", fallback: 1)]) ?? __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[5].value.[3]", fallback: 0)
+                        let meridian = components[__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[1].arg[1].value.arg[1].value.[6].value.[0].value", fallback: 1)]
                             
                         // Update the item's properties with the selected values
-                        item.edit(hour: hour, minute: minute, meridian: meridian, header: headerText, description: descriptionText)
+                        item.edit(hour: hour, minute: minute, meridian: meridian, dateSet: selectedDateString, header: headerText, description: descriptionText)
                                             
                         presentationMode.wrappedValue.dismiss()
                     })
-                    .foregroundColor(Color(red: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#85550.[1].[5].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[2].value", fallback: 1)))
+                    .foregroundColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].arg[0].value.[0].arg[0].value.[1].modifier[2].arg[0].value.arg[2].value", fallback: 1)))
                     .bold()
             }
         }
+        
+        .accentColor(Color(red: __designTimeInteger("#25713.[1].[6].property.[0].[0].modifier[0].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#25713.[1].[6].property.[0].[0].modifier[0].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#25713.[1].[6].property.[0].[0].modifier[0].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#25713.[1].[6].property.[0].[0].modifier[0].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#25713.[1].[6].property.[0].[0].modifier[0].arg[0].value.arg[2].value", fallback: 1))) // changes the back button color
         .onAppear {
             // Set the initial time to the item's stored time
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = __designTimeString("#85550.[1].[5].property.[0].[0].modifier[0].arg[0].value.[1].[0]", fallback: "h:mm a")
+            dateFormatter.dateFormat = __designTimeString("#25713.[1].[6].property.[0].[0].modifier[1].arg[0].value.[1].[0]", fallback: "h:mm a")
                                 
             let timeString = "\(item.hour):\(item.minute) \(item.meridian)"
             selectedTime = dateFormatter.date(from: timeString) ?? Date()
@@ -178,6 +175,10 @@ extension EditView {
             
             headerText = item.header
             descriptionText = item.description
+            
+            
+            selectedDateString = item.dateSet
+            
         }
     
 #sourceLocation()
@@ -186,7 +187,7 @@ extension EditView {
 
 import struct NextAlarm.EditView
 #Preview {
-    EditView(item: .constant(AlarmItem(active: true, hour: 8, minute: 15, meridian: "AM", date: "Everyday")))
+    EditView(item: .constant(AlarmItem(hour: 8, minute: 15, meridian: "pm", date: "Weekends", dateSet: ["Weekends"], header: "Wake Up")))
 }
 
 

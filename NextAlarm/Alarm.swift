@@ -9,11 +9,14 @@ import SwiftUI
 
 struct Alarm: View {
     
+    @State private var showEditView = false
+    @State private var addedAlarm = AlarmItem()
     @State var alarmItems: [AlarmItem] = [
-        AlarmItem(hour: 8, minute: 15, meridian: "pm", date: "Weekends", header: "Wake Up"),]
+        AlarmItem(hour: 8, minute: 15, meridian: "pm", date: "Weekends", dateSet: ["Weekends"], header: "Wake Up"),]
     
     var body: some View {
         ZStack{
+            
             Color(.black).ignoresSafeArea() //background
             
             VStack{
@@ -65,7 +68,10 @@ struct Alarm: View {
             VStack {
                 Spacer()
                 Button(action: {
-                    addAlarm()
+                    addedAlarm = AlarmItem()
+                    
+                    alarmItems.append(addedAlarm)
+                    showEditView = true
                 }, label: {
                     
                     HStack{
@@ -86,12 +92,21 @@ struct Alarm: View {
                 )
             }
         }
+        .sheet(isPresented: $showEditView) {
+            
+            EditView(item: $addedAlarm).onAppear {
+                setWindowBackgroundColor(.black) // Set the background color behind the sheet
+            }
+        }
     }
     
-}
-
-func addAlarm () {
-    
+    private func setWindowBackgroundColor(_ color: UIColor) {
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let window = windowScene.windows.first
+        {
+            window.backgroundColor = color
+        }
+    }
 }
 
 
