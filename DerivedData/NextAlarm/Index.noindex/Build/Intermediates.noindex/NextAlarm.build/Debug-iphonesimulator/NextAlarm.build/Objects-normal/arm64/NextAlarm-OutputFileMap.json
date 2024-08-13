@@ -6,9 +6,6 @@
     "emit-module-diagnostics" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/Objects-normal/arm64/NextAlarm-master-emit-module.dia",
     "swift-dependencies" : "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/Objects-normal/arm64/NextAlarm-master.swiftdeps"
   },
-  "/Users/jasonwan/.Trash/EditView.swift" : {
-
-  },
   "/Users/jasonwan/Code/Personal Projects/NextAlarm/DerivedData/NextAlarm/Index.noindex/Build/Intermediates.noindex/NextAlarm.build/Debug-iphonesimulator/NextAlarm.build/DerivedSources/GeneratedAssetSymbols.swift" : {
 
   },
@@ -25,6 +22,9 @@
 
   },
   "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/DateView.swift" : {
+
+  },
+  "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/EditView.swift" : {
 
   },
   "/Users/jasonwan/Code/Personal Projects/NextAlarm/NextAlarm/NextAlarmApp.swift" : {

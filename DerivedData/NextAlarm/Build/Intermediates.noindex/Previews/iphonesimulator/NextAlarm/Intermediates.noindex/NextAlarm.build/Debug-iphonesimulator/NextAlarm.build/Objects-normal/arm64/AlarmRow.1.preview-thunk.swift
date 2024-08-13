@@ -14,27 +14,27 @@ extension AlarmRow {
         
         HStack {
             Button(action: {
-                showEditView = __designTimeBoolean("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[0].[0]", fallback: true)
+                showEditView = __designTimeBoolean("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[0].value.[0].[0]", fallback: true)
             }, label: {
                 HStack{
                     VStack(alignment: .leading) {
                         HStack {
                             if item.minute < 10 {
-                                Text(String(item.hour) + __designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].[0].[0].arg[0].value.[0]", fallback: ":0") + String(item.minute)).font(.title)
+                                Text(String(item.hour) + __designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].[0].[0].arg[0].value.[0]", fallback: ":0") + String(item.minute)).font(.title)
                             } else {
-                                Text(String(item.hour) + __designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].[1].[0].arg[0].value.[0]", fallback: ":") + String(item.minute)).font(.title)
+                                Text(String(item.hour) + __designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].[1].[0].arg[0].value.[0]", fallback: ":") + String(item.minute)).font(.title)
                             }
                             Text(item.meridian)
                         }
                         
                         // Bandaid
                         if item.header.isEmpty && item.date.isEmpty {
-                            Text(__designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[0].[0].arg[0].value", fallback: "Untitled, Everyday")).font(.caption)
+                            Text(__designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[0].[0].arg[0].value", fallback: "Untitled, Everyday")).font(.caption)
                         }
                         else if item.header.isEmpty{
-                            Text(__designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[1].[0].arg[0].value.[0]", fallback: "Untitled, ") + item.date).font(.caption)
+                            Text(__designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[1].[0].arg[0].value.[0]", fallback: "Untitled, ") + item.date).font(.caption)
                         } else {
-                            Text(item.header + __designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[2].[0].arg[0].value.[0]", fallback: ", ") + item.date).font(.caption)
+                            Text(item.header + __designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[0].arg[1].value.[1].[2].[0].arg[0].value.[0]", fallback: ", ") + item.date).font(.caption)
                         }
                     }
                     .foregroundColor(.white)
@@ -44,14 +44,14 @@ extension AlarmRow {
                     Spacer()
                     
                     Toggle(isOn: $item.active) {
-                        Text(__designTimeString("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].arg[1].value.[0].arg[0].value", fallback: ""))
+                        Text(__designTimeString("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].arg[1].value.[0].arg[0].value", fallback: ""))
                     }
                     .labelsHidden()
-                    .tint(Color(red: __designTimeInteger("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#35760.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[2].value", fallback: 1)))
+                    .tint(Color(red: __designTimeInteger("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value.[0]", fallback: 137)/__designTimeInteger("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[0].value.[1]", fallback: 255), green: __designTimeInteger("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value.[0]", fallback: 187)/__designTimeInteger("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[1].value.[1]", fallback: 255), blue: __designTimeInteger("#6701.[1].[3].property.[0].[0].arg[0].value.[0].arg[1].value.[0].arg[0].value.[2].modifier[1].arg[0].value.arg[2].value", fallback: 1)))
                 }
             })
         }
-        .padding(__designTimeInteger("#35760.[1].[3].property.[0].[0].modifier[0].arg[0].value", fallback: 3))
+        .padding(__designTimeInteger("#6701.[1].[3].property.[0].[0].modifier[0].arg[0].value", fallback: 3))
         .background(Color.black)
         .listRowBackground(Color.black)
         .listRowSeparatorTint(.white)

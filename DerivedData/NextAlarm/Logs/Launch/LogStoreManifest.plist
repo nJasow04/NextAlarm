@@ -6,10 +6,10 @@
 	<integer>11</integer>
 	<key>logs</key>
 	<dict>
-		<key>047D3576-8680-4B18-AF14-C9FE988670DC</key>
+		<key>44C7BDE9-4B4A-42ED-8754-3AFB30C6A395</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>697EC00F-3D21-45B4-9301-27CD62AA1881</string>
+			<string>740EA651-E2F2-4FCE-AC03-0AC9116ACD7D</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-NextAlarm-2024.04.27_07-18-03--0400.xcresult</string>
+			<string>Run-NextAlarm-2024.05.04_18-17-36--0400.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -59,74 +59,13 @@
 			<key>signature</key>
 			<string>Run NextAlarm</string>
 			<key>timeStartedRecording</key>
-			<real>735909483.74546599</real>
+			<real>736553856.17983997</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run NextAlarm</string>
 			<key>uniqueIdentifier</key>
-			<string>047D3576-8680-4B18-AF14-C9FE988670DC</string>
-		</dict>
-		<key>77706F70-346E-4705-ADEE-EDA63F490772</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>E20827BF-67D2-4E13-A576-46A2D13360D0</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
-			<key>fileName</key>
-			<string>Run-NextAlarm-2024.05.03_07-51-32--0400.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasConsoleLog</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>0</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>NextAlarm project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>NextAlarm</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run NextAlarm</string>
-			<key>timeStartedRecording</key>
-			<real>736429892.22908998</real>
-			<key>timeStoppedRecording</key>
-			<real>0.0</real>
-			<key>title</key>
-			<string>Run NextAlarm</string>
-			<key>uniqueIdentifier</key>
-			<string>77706F70-346E-4705-ADEE-EDA63F490772</string>
+			<string>44C7BDE9-4B4A-42ED-8754-3AFB30C6A395</string>
 		</dict>
 	</dict>
 </dict>

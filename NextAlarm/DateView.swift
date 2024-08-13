@@ -3,7 +3,7 @@
 //  NextAlarm
 //
 //  Created by jason wan on 2024-05-02.
-//
+
 
 import SwiftUI
 
@@ -55,7 +55,9 @@ struct DateView: View {
                         .onTapGesture {
                             withAnimation(.easeInOut(duration: 0.5)) {
                                 if selectedItems.contains(item) {
-                                    selectedItems.remove(item)
+                                    if selectedItems.count > 1 {
+                                        selectedItems.remove(item)
+                                    }
                                 } else {
                                     selectedItems = [item]
                                     showDatePicker = false
@@ -88,11 +90,14 @@ struct DateView: View {
                                 withAnimation(.easeInOut(duration: 0.5)) {
                                     if selectedItems.contains(item) {
                                         selectedItems.remove(item)
+                                        if selectedItems.isEmpty {
+                                            selectedItems.insert("Everyday")
+                                        }
                                     } else {
                                         if weekends.contains(item) {
                                             selectedItems.remove("Weekends")
                                         }
-                                        if weekdays.contains(item){
+                                        if weekdays.contains(item) {
                                             selectedItems.remove("Weekdays")
                                         }
                                         selectedItems.insert(item)
@@ -176,6 +181,9 @@ struct DateView: View {
             }
         }.onAppear{
             selectedItems = Set(selectedDateString)
+            if selectedItems.isEmpty {
+                selectedItems.insert("Everyday")
+            }
         }
     }
     

@@ -12,15 +12,7 @@
       },
       {
         "comment": "",
-        "key": "Selected Alarm: %@"
-      },
-      {
-        "comment": "",
         "key": "Edit Alarm"
-      },
-      {
-        "comment": "",
-        "key": "Selected Alarm: Untitled"
       },
       {
         "comment": "",
@@ -28,27 +20,11 @@
       },
       {
         "comment": "",
-        "key": "Date"
-      },
-      {
-        "comment": "",
         "key": "Label"
       },
       {
         "comment": "",
-        "key": ""
-      },
-      {
-        "comment": "",
-        "key": "Untitled"
-      },
-      {
-        "comment": "",
-        "key": "Description"
-      },
-      {
-        "comment": "",
-        "key": "None"
+        "key": "Date: %@"
       }
     ]
   },
